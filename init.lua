@@ -3,7 +3,7 @@ local path = minetest.get_modpath("guns_ruger")
 local entity = {}
 	entity.visual = "sprite"
 	entity.visual_size = {x = 0.5, y = 0.5}
-	entity.textures = "22.png"
+	entity.textures = {"22.png"}
 	entity.hit_player = function(self, player)
 		player:punch(self.object, 1.0, {
 			full_punch_interval = 1.0,
